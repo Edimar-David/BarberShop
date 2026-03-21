@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaStack Barbearia | Cadastro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+        <article class="auth-card">
+
+            <header class="auth-header">
+                <span class="brand-logo">NovaStack Barbearia</span>
+                <h1 class="auth-title">Crie sua conta</h1>
+                <p class="auth-subtitle">
+                    Preencha os dados abaixo para se cadastrar e começar a agendar seus horários.
+                </p>
+            </header>
+
+            <section class="auth-form-section">
+                <form class="auth-form" id="form">
+
+                    <div class="input-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Máximo de 8 caracteres"
+                            required maxlength="8" >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirm-password">Confirmar senha</label>
+                        <input type="password" id="confirm-password" placeholder="Repita sua senha" required minlength="8" autocomplete="new-password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="btn-register">Criar conta</button>
+
+                </form>
+            </section>
+
+            <footer class="auth-card-footer">
+                <p>Já tem uma conta? <a href="../Login/login.html" class="text-link font-medium">Faça login aqui</a></p>
+            </footer>
+
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 NovaStack Barbearia | Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+<script type="module" src="script/script.js"></script>
+</html>
