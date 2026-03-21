@@ -113,7 +113,7 @@ POST   /login      -> Login
 ## Contribuidores
 
 - Edimar David dos Santos Junior (Backend)
-- Fernando Mendes de Oliveira Filho
+- Fernando Mendes de Oliveira Filho (Frontend)
 
 ---
 
@@ -122,4 +122,4 @@ POST   /login      -> Login
 - Implementar sistema de agendamento com validação de conflito
 - Adicionar autenticação com JWT
 - Criar dashboard do barbeiro
-- Realizar deploy da aplica
+- Realizar deploy da aplicação
