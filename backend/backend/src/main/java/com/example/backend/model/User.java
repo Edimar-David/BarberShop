@@ -10,22 +10,34 @@ import jakarta.persistence.Table;
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(
-            strategy = GenerationType.IDENTITY
-    )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    @Column(
-            nullable = false
-    )
+    @Column(nullable = false)
     String name;
-    @Column(
-            nullable = false
-    )
+    @Column(nullable = false, unique = true)
     String email;
-    @Column(
-            nullable = false
-    )
+    @Column(unique = true)
+    String phoneNumber;
+    @Column(nullable = false)
     String password;
+    @Column(nullable = false)
+    String role;
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
     public Long getId() {
         return this.id;
