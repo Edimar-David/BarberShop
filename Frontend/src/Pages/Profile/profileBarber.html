@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="profileBarber.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <button class="back-button">←</button>
+        <h1>Editar perfil</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="profile">
+            <label class="avatar">
+                <img src="../../assets/avatar-default.webp" alt="Foto de perfil" />
+                <span class="overlay">Trocar foto</span>
+                <input type="file" accept="image/*" />
+            </label>
+        </section>
+
+        <section class="form">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="about">Sobre</label>
+                <textarea id="about" placeholder="Fale sobre você"></textarea>
+            </div>
+
+        </section>
+
+        <section class="services">
+
+            <h2>Horário de trabalho</h2>
+
+            <div class="time-group">
+                <div class="form-group">
+                    <label for="start">Início</label>
+                    <input type="time" id="start">
+                </div>
+
+                <div class="form-group">
+                    <label for="end">Fim</label>
+                    <input type="time" id="end">
+                </div>
+            </div>
+
+            <div class="days">
+                <label>Dias de trabalho</label>
+
+                <div class="days-group">
+                    <button type="button" class="day">Seg</button>
+                    <button type="button" class="day">Ter</button>
+                    <button type="button" class="day">Qua</button>
+                    <button type="button" class="day">Qui</button>
+                    <button type="button" class="day">Sex</button>
+                    <button type="button" class="day">Sáb</button>
+                    <button type="button" class="day">Dom</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="service-list">
+
+            <header class="service-header">
+                <h2>Serviços</h2>
+            </header>
+
+            <div class="services-container">
+
+                <article class="service-item">
+                    <div class="service-info">
+                        <h3 class="service-name">Corte</h3>
+                        <p class="service-price">R$ 35,00</p>
+                    </div>
+
+                    <footer class="service-actions">
+                        <button class="edit-btn" type="button">Editar</button>
+                    </footer>
+                </article>
+
+                <article class="service-item">
+                    <div class="service-info">
+                        <h3 class="service-name">Barba</h3>
+                        <p class="service-price">R$ 25,00</p>
+                    </div>
+
+                    <footer class="service-actions">
+                        <button class="edit-btn" type="button">Editar</button>
+                    </footer>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
